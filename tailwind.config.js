@@ -3,10 +3,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        
+        lighterBlue: '#EFF4FF',
+        lightBlue: '#5ACAFF',
+        darkBlue: '#2585BB',
       },
       fontFamily: {
-      
+
       },
       fontSize: {
         'xs': ['0.75rem', '1rem'],     // Example: Extra small screens
