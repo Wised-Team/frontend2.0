@@ -14,16 +14,18 @@ const Navbar = () => {
            </div>
        </div>
        <div className="flex flex-row">
-         {
-            (isNotify)?(
-                <ImageIcon url={Bell} wt="20px" ht="20px"/>
-            ):
-            (
-                <ImageIcon url={BellWithNotification} wt="20px" ht="20px"/>
-            )
-         }
+         <div className="cursor-pointer hover:bg-[#40494f31] px-1 py-1 rounded-md" onClick={()=>{setisNotify(!isNotify)}}>
+            {
+                (isNotify)?(
+                    <ImageIcon url={Bell} wt="20px" ht="20px"/>
+                ):
+                (
+                    <ImageIcon url={BellWithNotification} wt="20px" ht="20px"/>
+                )
+            }
+         </div>
          <div className="">
-
+            <ImageIcon url=""/>
          </div>
        </div>
     </div>
