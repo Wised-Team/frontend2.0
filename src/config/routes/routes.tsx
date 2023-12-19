@@ -6,7 +6,7 @@ import { Navbar } from '../../layouts'
 export const AppLayout = () => {
   return (
     <div className='h-screen w-screen'>
-      <Navbar />
+      {/* <Navbar /> */}
       <Outlet />
     </div>
   )
@@ -20,6 +20,10 @@ export const routes = createBrowserRouter([
       {
         path: '/',
         element: <>Home Page</>
+      },
+      {
+        path: 'designsystem',
+        element: <FeedPage />
       },
       {
         path: '/feed',
