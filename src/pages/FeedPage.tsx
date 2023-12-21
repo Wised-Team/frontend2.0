@@ -1,3 +1,4 @@
+
 import {  sharuk } from "../assets"
 import Catergories from "../components/Catergories"
 import PersonaIcon from "../components/PersonaIcon"
@@ -15,7 +16,7 @@ const FeedPage = () => {
              
         </div>
     </div>
-  )
-}
+  );
+};
 
-export default FeedPage
+export default FeedPage;

@@ -29,6 +29,7 @@ const Navbar = () => {
         <div className="cursor-pointer hover:bg-[#40494f31] hover:rounded-3xl px-1 py-1">
           <ImageIcon url={Ellipse} wt="35px" ht="35px" classname="rounded-3xl" />
         </div>
+
       </div>
     </div>
   );

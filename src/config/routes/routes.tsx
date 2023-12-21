@@ -1,7 +1,7 @@
 
-import { Outlet, createBrowserRouter } from 'react-router-dom'
-import FeedPage from '../../pages/FeedPage'
-import { Navbar } from '../../layouts'
+import { Outlet, createBrowserRouter } from 'react-router-dom';
+import FeedPage from '../../pages/FeedPage';
+import { Navbar } from '../../layouts';
 
 
 export const AppLayout = () => {
@@ -12,19 +12,28 @@ export const AppLayout = () => {
       
        {!hideNavbar && <Navbar />}
        <Outlet/>
+
     </div>
-  )
-}
+  );
+};
 
 export const routes = createBrowserRouter([
-    {
-        path:'/',
-        element:<AppLayout/>,
-        children:[
-            {
-                path:'/feed',
-                element:<FeedPage/>,
-            },
-        ]
-    }
-])
+  {
+    path: '/',
+    element: <AppLayout />,
+    children: [
+      {
+        path: '/',
+        element: <>Home Page</>,
+      },
+      {
+        path: 'designsystem',
+        element: <FeedPage />,
+      },
+      {
+        path: '/feed',
+        element: <FeedPage />,
+      },
+    ],
+  },
+]);
