@@ -16,7 +16,9 @@ try {
   console.log('Tailwind CSS is already installed.');
 } catch (error) {
   // If Tailwind CSS is not installed, install it and its dependencies
-  execSync('npm install -D tailwindcss postcss autoprefixer', { stdio: 'inherit' });
+  execSync('npm install -D tailwindcss postcss autoprefixer', {
+    stdio: 'inherit',
+  });
 }
 
 // Initialize a Tailwind CSS configuration file
@@ -78,7 +80,7 @@ const tailwindConfigCode = `module.exports = {
     },
   },
   plugins: [],
-};`
+};`;
 
 // Write the necessary Tailwind CSS imports to the CSS file
 fs.writeFileSync(tailwindCSSFile, cssCode);
@@ -87,9 +89,11 @@ const tailwindConfigFile = path.join(__dirname, 'tailwind.config.js');
 
 fs.writeFileSync(tailwindConfigFile, tailwindConfigCode);
 
-console.log("Tailwind Config Code Done Successfully!!!!!")
+console.log('Tailwind Config Code Done Successfully!!!!!');
 
-console.log('Tailwind CSS has been successfully set up in your React Vite project.');
+console.log(
+  'Tailwind CSS has been successfully set up in your React Vite project.'
+);
 
 // Start the development server
 // execSync('npm run dev', { stdio: 'inherit' });
