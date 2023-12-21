@@ -45,7 +45,7 @@ const SortBy = () => {
       >
         <div className='flex flex-row items-center gap-5'>
           <h5>{selectedOption}</h5>
-          <ImageIcon url={arrow} classname='transform: rotate-90' />
+          <ImageIcon url={arrow} classname='' />
         </div>
        
         {isDropdownOpen && (

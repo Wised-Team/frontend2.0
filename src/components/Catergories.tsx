@@ -25,7 +25,7 @@ const Catergories = () => {
         </div>
       ))}
       <div className="px-3 py-2 mx-2 cursor-pointer bg-[#DEF3FF] rounded-3xl font-bold text-[#1DA1F2]">
-        <ImageIcon url={arrow} wt="7px" ht="7px"  />
+        <ImageIcon url={arrow} wt="7px" ht="7px" classname=' tranform: -rotate-90' />
       </div>
     </div>
   );
