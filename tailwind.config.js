@@ -7,6 +7,8 @@ module.exports = {
         lighterBlue: '#EFF4FF',
         lightBlue: '#5ACAFF',
         darkBlue: '#2585BB',
+        lightestBlue: '#EBF2FF',
+        morelighestBlue: '#DEF3FF',
       },
       fontFamily: {
 

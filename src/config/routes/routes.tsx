@@ -5,7 +5,7 @@ import { Navbar } from '../../layouts'
 
 export const AppLayout = () => {
   return (
-    <div className='h-screen w-screen'>
+    <div className=''>
       {/* <Navbar /> */}
       <Outlet />
     </div>
