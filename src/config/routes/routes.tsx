@@ -1,12 +1,18 @@
+
 import { Outlet, createBrowserRouter } from 'react-router-dom';
 import FeedPage from '../../pages/FeedPage';
 import { Navbar } from '../../layouts';
 
+
 export const AppLayout = () => {
+  const hideNavbar = ( location.pathname === "/");
+
   return (
-    <div className="">
-      {/* <Navbar /> */}
-      <Outlet />
+    <div className='w-screen'>
+      
+       {!hideNavbar && <Navbar />}
+       <Outlet/>
+
     </div>
   );
 };
