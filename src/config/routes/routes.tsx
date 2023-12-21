@@ -1,16 +1,15 @@
-
-import { Outlet, createBrowserRouter } from 'react-router-dom'
-import FeedPage from '../../pages/FeedPage'
-import { Navbar } from '../../layouts'
+import { Outlet, createBrowserRouter } from 'react-router-dom';
+import FeedPage from '../../pages/FeedPage';
+import { Navbar } from '../../layouts';
 
 export const AppLayout = () => {
   return (
-    <div className=''>
+    <div className="">
       {/* <Navbar /> */}
       <Outlet />
     </div>
-  )
-}
+  );
+};
 
 export const routes = createBrowserRouter([
   {
@@ -19,16 +18,16 @@ export const routes = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <>Home Page</>
+        element: <>Home Page</>,
       },
       {
         path: 'designsystem',
-        element: <FeedPage />
+        element: <FeedPage />,
       },
       {
         path: '/feed',
         element: <FeedPage />,
       },
-    ]
-  }
-])
+    ],
+  },
+]);

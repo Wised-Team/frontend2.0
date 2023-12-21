@@ -48,22 +48,30 @@ const DropdownMenu: React.FC<DropdownMenuInterface> = ({ className }) => {
   return (
     <div
       className={cn(
-        'min-w-[9rem] h-[2rem] border-[1.5px] border-x-morelighestBlue flex items-center justify-between px-4 rounded-xl cursor-pointer relative',
+        'relative flex h-[2rem] min-w-[9rem] cursor-pointer items-center justify-between rounded-xl border-[1.5px] border-x-morelighestBlue px-4',
         className
       )}
       onClick={handleDropdownOpener}
     >
-      <span className={`font-semibold `}>{selectedItem === '' ? 'Select' : `${selectedItem}`}</span>
-      <img src={arrow} className={`${isDropdownActive ? 'rotate-180' : ' rotate-0'} transition-all duration-200`} />
-
+      <span className={`font-semibold `}>
+        {selectedItem === '' ? 'Select' : `${selectedItem}`}
+      </span>
+      <img
+        src={arrow}
+        className={`${
+          isDropdownActive ? 'rotate-180' : ' rotate-0'
+        } transition-all duration-200`}
+      />
       {isDropdownActive && (
-        <div className='absolute w-full p-2 bg-white shadow-md rounded-md top-[100%] mt-[0.3rem] left-0'>
-          <div className='flex flex-col gap-2'>
+        <div className="absolute left-0 top-[100%] mt-[0.3rem] w-full rounded-md bg-white p-2 shadow-md">
+          <div className="flex flex-col gap-2">
             {listItems.map(({ title, value }: ListItemInterface) => (
               <span
-                className='p-1 hover:bg-gray-200 rounded-lg'
+                className="rounded-lg p-1 hover:bg-gray-200"
                 key={value}
-                onClick={(e: React.MouseEvent<HTMLDivElement>) => handleDropDownItemChange(e.currentTarget.textContent || '')}
+                onClick={(e: React.MouseEvent<HTMLDivElement>) =>
+                  handleDropDownItemChange(e.currentTarget.textContent || '')
+                }
               >
                 {title}
               </span>

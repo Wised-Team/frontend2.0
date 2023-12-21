@@ -1,5 +1,3 @@
-import ImageIcon from "./ImageIcon";
+import ImageIcon from './ImageIcon';
 
-export{
-    ImageIcon
-}
+export { ImageIcon };
