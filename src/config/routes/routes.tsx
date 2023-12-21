@@ -1,6 +1,7 @@
 import { Outlet, createBrowserRouter } from 'react-router-dom';
 import FeedPage from '../../pages/FeedPage';
 import { Navbar } from '../../layouts';
+import DesignSystem from '../../pages/DesignSystem';
 
 export const AppLayout = () => {
   return (
@@ -22,7 +23,7 @@ export const routes = createBrowserRouter([
       },
       {
         path: 'designsystem',
-        element: <FeedPage />,
+        element: <DesignSystem/>,
       },
       {
         path: '/feed',
