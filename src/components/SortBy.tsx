@@ -11,17 +11,17 @@ const SortOptions = {
 const SortBy = () => {
   const [selectedOption, setSelectedOption] = useState(SortOptions.POPULAR);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const dropdownRef:any = useRef(null);
-  
+  const dropdownRef: any = useRef(null);
+
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
-  const handleOptionClick = (option:any) => {
+  const handleOptionClick = (option: any) => {
     setSelectedOption(option);
     setIsDropdownOpen(false);
   };
-  const handleOutsideClick = (event:any) => {
+  const handleOutsideClick = (event: any) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
       setIsDropdownOpen(false);
     }
@@ -36,28 +36,33 @@ const SortBy = () => {
   }, []);
 
   return (
-    <div className='relative flex flex-row text-[15px] font-inter items-center gap-2'>
+    <div className="relative flex flex-row items-center gap-2 text-[15px] font-inter">
       <h5>Sort By:</h5>
       <div
         ref={dropdownRef}
-        className="px-5 py-1 rounded-3xl border-[1.5px] cursor-pointer flex flex-col gap-1"
+        className="flex cursor-pointer flex-col gap-1 rounded-3xl border-[1.5px] px-5 py-1"
         onClick={toggleDropdown}
       >
-        <div className='flex flex-row items-center gap-5'>
+        <div className="flex flex-row items-center gap-5">
           <h5>{selectedOption}</h5>
-          <ImageIcon url={arrow} classname='transform: rotate-90' />
+          <ImageIcon
+            url={arrow}
+            classname={`${
+              isDropdownOpen ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+            } transition-all duration-300`}
+          />
         </div>
-       
+
         {isDropdownOpen && (
-          <div className="absolute top-9 left-[65px] z-10 bg-white border border-gray-300 rounded-md shadow-md px-1 py-1">
+          <div className="absolute left-[65px] top-9 z-10 rounded-md border border-gray-300 bg-white px-1 py-1 shadow-md">
             <div
-              className="py-1 px-6 cursor-pointer hover:bg-[#DEF3FF] rounded-md"
+              className="cursor-pointer rounded-md px-6 py-1 hover:bg-[#DEF3FF]"
               onClick={() => handleOptionClick(SortOptions.POPULAR)}
             >
               Popular
             </div>
             <div
-              className="py-1 px-6 cursor-pointer hover:bg-[#DEF3FF] rounded-md"
+              className="cursor-pointer rounded-md px-6 py-1 hover:bg-[#DEF3FF]"
               onClick={() => handleOptionClick(SortOptions.RECENT)}
             >
               Recent
