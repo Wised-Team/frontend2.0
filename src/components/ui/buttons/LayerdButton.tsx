@@ -1,8 +1,7 @@
 import React from 'react';
 import { VariantProps, cva } from 'class-variance-authority';
 
-import { cn } from '../../../../../utils';
-
+import { cn } from '../../../utils';
 
 const buttonVariants = cva(
   'w-full py-4 border-[2px] rounded-md border-black font-bold absolute z-[10]',

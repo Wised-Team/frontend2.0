@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { VariantProps, cva } from 'class-variance-authority';
-import { cn } from '../../../../../utils';
-
+import { cn } from '../../../utils';
 
 const togglerVariants = cva(
   'relative flex items-center cursor-pointer rounded-3xl ',

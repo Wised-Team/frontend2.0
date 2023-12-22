@@ -1,8 +1,8 @@
 
 import {  sharuk } from "../assets"
-import Catergories from "../features/feed/components/Catergories"
-import PersonaIcon from "../features/feed/components/PersonaIcon"
-import SortBy from "../features/feed/components/SortBy"
+import Catergories from "../components/Catergories"
+import PersonaIcon from "../components/PersonaIcon"
+import SortBy from "../components/SortBy"
 
 
 const FeedPage = () => {

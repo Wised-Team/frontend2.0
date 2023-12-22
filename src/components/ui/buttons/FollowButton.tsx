@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { cn } from '../../../../../utils';
-import { following, notfollow } from '../../../../../assets';
 
+import notfollow from '../../../assets/Icons/notfollow.svg';
+import following from '../../../assets/Icons/following.svg';
+import { cn } from '../../../utils';
 
 interface FollowButtonProps {
   className?: string;
