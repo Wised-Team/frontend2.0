@@ -1,13 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 // Temporary Name of The Component.
 const SectionA = () => {
-  return (
-    <div className='w-[30%] '>
+  return <div className="w-[30%] "></div>;
+};
 
-        
-    </div>
-  )
-}
-
-export default SectionA
+export default SectionA;

@@ -58,7 +58,7 @@ const IconButton: React.FC<IconButtonProps> = ({
       {direction === 'left' ? (
         <>
           {renderIcon()}
-          <span className='mb-[1px]'>{text}</span>
+          <span className="mb-[1px]">{text}</span>
         </>
       ) : (
         <>

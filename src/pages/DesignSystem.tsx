@@ -79,16 +79,18 @@ const DesignSystem = () => {
           <FollowButton />
         </div>
         <div className="flex w-full items-center justify-center border-[2px] border-black">
-          <DropdownMenu listItems={[
-            {
-              title: 'Popular',
-              value: 'popular',
-            },
-            {
-              title: 'Recent',
-              value: 'recent',
-            },
-          ]} />
+          <DropdownMenu
+            listItems={[
+              {
+                title: 'Popular',
+                value: 'popular',
+              },
+              {
+                title: 'Recent',
+                value: 'recent',
+              },
+            ]}
+          />
         </div>
         <div className="flex w-full items-center justify-center border-[2px] border-black">
           <IconButton

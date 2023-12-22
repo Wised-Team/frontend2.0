@@ -23,7 +23,10 @@ interface DropdownMenuInterface {
   listItems: ListItemInterface[];
 }
 
-const DropdownMenu: React.FC<DropdownMenuInterface> = ({ className, listItems }) => {
+const DropdownMenu: React.FC<DropdownMenuInterface> = ({
+  className,
+  listItems,
+}) => {
   const [isDropdownActive, setIsDropdownActive] = useState<boolean>(false);
   const [selectedItem, setSelectedItem] = useState<string>('');
 
@@ -54,7 +57,7 @@ const DropdownMenu: React.FC<DropdownMenuInterface> = ({ className, listItems })
       )}
       onClick={handleDropdownOpener}
     >
-      <span className={` font-normal font-sm`}>
+      <span className={` font-sm font-normal`}>
         {selectedItem === '' ? 'Select' : `${selectedItem}`}
       </span>
       <img
