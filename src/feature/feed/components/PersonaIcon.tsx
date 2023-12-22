@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImageIcon } from '.';
+import { ImageIcon } from '../../../components';
 
 const PersonaIcon: React.FC<{
   url: string;
