@@ -14,12 +14,12 @@ const PeopleUniversity = () => {
             <div className='flex flex-col mt-[1rem]'>
                 {
                     new Array(3).fill(0).map((item, index) => (
-                        <div key = {index} className='flex items-center gap-8 mb-[1rem]'>
+                        <div key = {index} className='flex items-center gap-20 mb-[1rem]'>
                             <div className='flex items-center gap-2'>
                                 <Avatar size={40} />
                                 <div className='flex flex-col'>
                                     <h3 className='font-bold text-sm'>Robert Green</h3>
-                                    <p className='font-normal text-sm'>Software Developer</p>
+                                    <p className='font-normal text-sm'>Software Dev...</p>
                                 </div>
                             </div>
                             <FollowButton className='w-[5.5rem] h-7 font-light text-xs' />
