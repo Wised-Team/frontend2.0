@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { ImageIcon } from '.';
-import { arrow } from '../assets';
+import { ImageIcon } from '../../../components';
+import { arrow } from '../../../assets';
 
 // Enum representing the sorting options
 const SortOptions = {
