@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ImageIcon } from '.';
-import { arrow } from '../assets';
+import { arrow } from '../../../assets';
+
 
 const categories = ['All', 'Internet Of Things(IOT)', 'BioMedical Engineering', 'Big Data', 'Medi Engineering'];
 
@@ -24,8 +25,8 @@ const Catergories = () => {
           {category}
         </div>
       ))}
-      <div className="px-3 py-2 mx-2 cursor-pointer bg-[#DEF3FF] rounded-3xl font-bold text-[#1DA1F2]">
-        <ImageIcon url={arrow} wt="7px" ht="7px" classname=' tranform: -rotate-90' />
+      <div className="px-4 py-3 mx-2 cursor-pointer bg-[#DEF3FF] rounded-3xl font-bold text-[#1DA1F2]">
+        <ImageIcon url={arrow} wt="10px" ht="10px" classname=' tranform: -rotate-90' />
       </div>
     </div>
   );

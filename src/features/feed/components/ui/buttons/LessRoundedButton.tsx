@@ -1,6 +1,7 @@
 import React from 'react';
 import { VariantProps, cva } from 'class-variance-authority';
-import { cn } from '../../../utils';
+import { cn } from '../../../../../utils';
+
 
 const buttonVariants = cva('flex items-center justify-center', {
   variants: {

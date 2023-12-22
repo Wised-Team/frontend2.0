@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Bell, BellWithNotification, Ellipse, Magnify, Wised, sharuk } from "../assets";
-import { ImageIcon } from "../components";
-import PersonaIcon from "../components/PersonaIcon";
+import { Bell, BellWithNotification, Ellipse, Magnify, Wised } from "../assets";
+import { ImageIcon } from "../features/feed/components";
 const Navbar = () => {
   const [isNotify, setisNotify] = useState(false);
 
