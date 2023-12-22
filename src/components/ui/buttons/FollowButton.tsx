@@ -8,7 +8,7 @@ interface FollowButtonProps {
   className?: string;
 }
 
-const FollowButton = () => {
+const FollowButton: React.FC<FollowButtonProps> = ({ className }) => {
   const [isFollowing, setIsFollowing] = useState<boolean>(false);
 
   const handleFollow = () => {
@@ -19,6 +19,7 @@ const FollowButton = () => {
     <div
       className={cn(
         'flex h-10 w-[8rem] cursor-pointer items-center justify-center gap-2 rounded-3xl border-[2px] border-darkerBlue font-bold transition-all duration-200 hover:opacity-90',
+        className,
         isFollowing ? 'bg-darkerBlue text-white' : 'bg-white text-darkerBlue'
       )}
       onClick={handleFollow}

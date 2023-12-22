@@ -3,7 +3,7 @@ import { VariantProps, cva } from 'class-variance-authority';
 import { cn } from '../../../utils';
 
 const iconButtonVariants = cva(
-  'flex justify-between rounded-lg cursor-pointer font-normal',
+  'flex justify-between rounded-lg cursor-pointer font-normal items-center my-auto',
   {
     variants: {
       variant: {
@@ -12,7 +12,7 @@ const iconButtonVariants = cva(
         ghost: 'bg-lighterBlue text-black',
       },
       size: {
-        default: 'px-2 py-[2px] gap-[0.9rem]',
+        default: 'px-2 h-[1.8rem] gap-[0.9rem]',
         sm: '',
         lg: '',
       },
@@ -58,7 +58,7 @@ const IconButton: React.FC<IconButtonProps> = ({
       {direction === 'left' ? (
         <>
           {renderIcon()}
-          <span>{text}</span>
+          <span className='mb-[1px]'>{text}</span>
         </>
       ) : (
         <>
