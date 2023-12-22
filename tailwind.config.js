@@ -10,7 +10,9 @@ module.exports = {
         lightestBlue: '#EBF2FF',
         morelighestBlue: '#DEF3FF',
       },
-      fontFamily: {},
+      fontFamily: {
+        'Inter': ['Inter', 'sans-serif']
+      },
       fontSize: {
         xs: ['0.75rem', '1rem'], // Example: Extra small screens
         sm: ['0.875rem', '1.25rem'], // Example: Small screens
@@ -35,5 +37,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require('tailwindcss-font-inter')],
+  plugins: [
+    require('tailwindcss-font-inter'),
+    require('tailwind-scrollbar-hide'),
+  ],
 };

@@ -1,4 +1,5 @@
 import FollowButton from '../components/ui/buttons/FollowButton';
+import IconButton from '../components/ui/buttons/IconButton';
 import LayerdButton from '../components/ui/buttons/LayerdButton';
 import LessRoundedButton from '../components/ui/buttons/LessRoundedButton';
 import MoreRoundedButton from '../components/ui/buttons/MoreRoundedButton';
@@ -7,13 +8,15 @@ import DropdownMenu from '../components/ui/others/Dropdown/DropdownMenu';
 import Toggler from '../components/ui/others/Toggler';
 // import { Navbar } from "../layouts"
 
+import homeicon from '../assets/Icons/HomeIcon.svg';
+
 const DesignSystem = () => {
   return (
     <div className="flex flex-col p-4 ">
       <div className="mt-[2rem] text-center text-5xl font-bold">
         Design System
       </div>
-      <div className="mt-[1rem] grid min-h-[1400px] grid-cols-3 grid-rows-5 gap-4 border-[2px] border-black p-4">
+      <div className="mt-[1rem] grid min-h-[900px] grid-cols-3 grid-rows-5 gap-4 border-[2px] border-black p-4">
         <div className="flex h-full w-full items-center justify-center border-[2px] border-black">
           <LayerdButton
             className=" bg-lighterBlue"
@@ -76,14 +79,29 @@ const DesignSystem = () => {
           <FollowButton />
         </div>
         <div className="flex w-full items-center justify-center border-[2px] border-black">
-          <DropdownMenu />
+          <DropdownMenu listItems={[
+            {
+              title: 'Popular',
+              value: 'popular',
+            },
+            {
+              title: 'Recent',
+              value: 'recent',
+            },
+          ]} />
+        </div>
+        <div className="flex w-full items-center justify-center border-[2px] border-black">
+          <IconButton
+            variant={'default'}
+            size={'default'}
+            text="Messages"
+            icon={homeicon}
+            direction="left"
+          />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default DesignSystem
-
-
-
+export default DesignSystem;

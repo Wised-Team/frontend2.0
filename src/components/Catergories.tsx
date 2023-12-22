@@ -2,32 +2,39 @@ import { useState } from 'react';
 import { ImageIcon } from '.';
 import { arrow } from '../assets';
 
-const categories = ['All', 'Internet Of Things(IOT)', 'BioMedical Engineering', 'Big Data', 'Medi Engineering'];
+const categories = [
+  'All',
+  'Internet of Things (IoT)',
+  'Biomedical Engineering',
+  'Cybersecurity in Engineering Systems',
+  'Biomedical Engineering',
+  'Big Data',
+  'Medi Engineering',
+];
 
 const Catergories = () => {
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState<number>(0);
 
-  const handleClick = (index:any) => {
+  const handleClick = (index: any) => {
     setSelectedCategory(index);
   };
 
   return (
-    <div className="flex flex-row text-[15px] items-center font-inter">
-      {categories.map((category, index) => (
-        <div
-          key={index}
-          className={`px-3 py-1 mx-2 cursor-pointer ${
-            selectedCategory === index ? 'bg-[#DEF3FF]' : ''
-          } rounded-3xl text-center hover:bg-[#DEF3FF]`}
-          onClick={() => handleClick(index)}
-        >
-          {category}
-        </div>
-      ))}
-      <div className="px-3 py-2 mx-2 cursor-pointer bg-[#DEF3FF] rounded-3xl font-bold text-[#1DA1F2]">
-        <ImageIcon url={arrow} wt="7px" ht="7px" classname=' tranform: -rotate-90' />
+    <>
+      <div className="flex flex-row items-center overflow-x-scroll whitespace-nowrap py-2 text-[15px] font-inter scrollbar-hide ">
+        {categories.map((category, index) => (
+          <div
+            key={index}
+            className={`mx-2 cursor-pointer px-3 py-1 text-sm ${
+              selectedCategory === index ? 'bg-[#DEF3FF]' : ''
+            } rounded-3xl text-center hover:bg-[#DEF3FF]`}
+            onClick={() => handleClick(index)}
+          >
+            {category}
+          </div>
+        ))}
       </div>
-    </div>
+    </>
   );
 };
 

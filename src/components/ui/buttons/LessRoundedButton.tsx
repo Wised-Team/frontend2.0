@@ -10,7 +10,7 @@ const buttonVariants = cva('flex items-center justify-center', {
       ghost: 'bg-lightestBlue text-black',
     },
     size: {
-      default: 'rounded-md h-8 py-5 px-2',
+      default: 'rounded-md h-8 py-3 px-2 text-sm',
       sm: '',
       mg: '',
       lg: '',
