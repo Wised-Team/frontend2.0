@@ -18,3 +18,13 @@ body {
   overflow-x: hidden;
   font-family: 'Inter', sans-serif;
 }
+
+::-webkit-scrollbar{
+  width: 4px;
+
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #4D8AFF;
+  width: 3px;
+}
