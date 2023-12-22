@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import arrow from '../../../../assets/Icons/arrow.svg';
-import { cn } from '../../../../utils';
+import { cn } from '../../../../../../utils';
+import { arrow } from '../../../../../../assets';
+
 
 interface ListItemInterface {
   title: string;

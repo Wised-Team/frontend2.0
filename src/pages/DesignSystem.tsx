@@ -1,10 +1,10 @@
-import FollowButton from '../components/ui/buttons/FollowButton';
-import LayerdButton from '../components/ui/buttons/LayerdButton';
-import LessRoundedButton from '../components/ui/buttons/LessRoundedButton';
-import MoreRoundedButton from '../components/ui/buttons/MoreRoundedButton';
-import Avatar from '../components/ui/others/Avatar';
-import DropdownMenu from '../components/ui/others/Dropdown/DropdownMenu';
-import Toggler from '../components/ui/others/Toggler';
+import FollowButton from '../features/feed/components/ui/buttons/FollowButton';
+import LayerdButton from '../features/feed/components/ui/buttons/LayerdButton';
+import LessRoundedButton from '../features/feed/components/ui/buttons/LessRoundedButton';
+import MoreRoundedButton from '../features/feed/components/ui/buttons/MoreRoundedButton';
+import Avatar from '../features/feed/components/ui/others/Avatar';
+import DropdownMenu from '../features/feed/components/ui/others/Dropdown/DropdownMenu';
+import Toggler from '../features/feed/components/ui/others/Toggler';
 // import { Navbar } from "../layouts"
 
 const DesignSystem = () => {

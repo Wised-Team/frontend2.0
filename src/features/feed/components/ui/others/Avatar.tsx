@@ -1,5 +1,6 @@
 import React from 'react';
-import image from '../../../assets/human.jpg';
+import { Ellipse } from '../../../../../assets';
+
 
 interface AvatarProps {
   size: number;
@@ -15,7 +16,7 @@ const Avatar: React.FC<AvatarProps> = ({ size }) => {
       }}
     >
       <img
-        src={image}
+        src={Ellipse}
         alt="avatar image"
         className="h-full w-full object-cover object-center "
       />
