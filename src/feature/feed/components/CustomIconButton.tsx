@@ -1,4 +1,5 @@
-import { ImageIcon } from '.';
+import React from 'react';
+import { ImageIcon } from '../../../components';
 
 const CustomIconButton: React.FC<{
   url: string;

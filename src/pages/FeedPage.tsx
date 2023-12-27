@@ -1,9 +1,6 @@
-import { sharuk } from '../assets';
 import { ImageIcon } from '../components';
-import Catergories from '../components/Catergories';
-import PersonaIcon from '../components/PersonaIcon';
-import SortBy from '../components/SortBy';
-
+import Catergories from '../feature/feed/components/Catergories';
+import SortBy from '../feature/feed/components/SortBy';
 import arrow from '../assets/Icons/arrow.svg';
 import { SectionA, SectionB, SectionC } from '../feature/feed';
 

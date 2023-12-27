@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { ImageIcon } from '.';
-import { arrow } from '../assets';
+
 
 const categories = [
   'All',
