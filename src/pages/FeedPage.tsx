@@ -1,9 +1,6 @@
-import { sharuk } from '../assets';
 import { ImageIcon } from '../components';
 import Catergories from '../feature/feed/components/Catergories';
-import PersonaIcon from '../feature/feed/components/PersonaIcon';
 import SortBy from '../feature/feed/components/SortBy';
-
 import arrow from '../assets/Icons/arrow.svg';
 import { SectionA, SectionB, SectionC } from '../feature/feed';
 
@@ -26,7 +23,7 @@ const FeedPage = () => {
           <SortBy />
         </div>
       </div>
-      <div className='flex items-center gap-6'>
+      <div className='flex gap-6'>
         <SectionA />
         <SectionB />
         <SectionC />
