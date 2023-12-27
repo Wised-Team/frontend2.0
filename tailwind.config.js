@@ -11,7 +11,7 @@ module.exports = {
         morelighestBlue: '#DEF3FF',
       },
       fontFamily: {
-        'Inter': ['Inter', 'sans-serif']
+        Inter: ['Inter', 'sans-serif'],
       },
       fontSize: {
         xs: ['0.75rem', '1rem'], // Example: Extra small screens
