@@ -23,7 +23,7 @@ const FeedPage = () => {
           <SortBy />
         </div>
       </div>
-      <div className="flex gap-6">
+      <div className="flex justify-between">
         <SectionA />
         <SectionB />
         <SectionC />

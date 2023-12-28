@@ -1,6 +1,5 @@
 import SuggestedProfiles from './SuggestedProfiles';
 import Trending from './Trending';
-
 // Temporary Name of The Component.
 const SectionC = () => {
   return (

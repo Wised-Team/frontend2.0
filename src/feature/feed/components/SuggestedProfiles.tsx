@@ -8,7 +8,6 @@ const PeopleUniversity = () => {
       <h2 className=" text-lg font-semibold text-darkBlue">
         From University of Mumbai
       </h2>
-
       <div className="mt-[1rem] flex flex-col">
         {new Array(3).fill(0).map((item, index) => (
           <div key={index} className="mb-[1rem] flex items-center gap-20">

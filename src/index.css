@@ -18,12 +18,11 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 4px;
-
 }
 
-::-webkit-scrollbar-thumb{
-  background-color: #4D8AFF;
+::-webkit-scrollbar-thumb {
+  background-color: #4d8aff;
   width: 3px;
 }
