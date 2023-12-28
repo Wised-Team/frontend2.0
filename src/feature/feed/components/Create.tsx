@@ -15,11 +15,11 @@ type IIconsData = {
 const iconsData: IIconsData[] = [
   {
     text: 'Document',
-    icon: doc,
+    icon: file,
   },
   {
     text: 'Write Up',
-    icon: file,
+    icon: doc,
   },
   {
     text: 'Photo',
