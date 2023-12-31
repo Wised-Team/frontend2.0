@@ -13,10 +13,10 @@ import homeicon from '../assets/Icons/HomeIcon.svg';
 const DesignSystem = () => {
   return (
     <div className="flex flex-col p-4 ">
-      <div className="mt-[2rem] text-center text-5xl font-bold">
+      <div className="mt-[2rem] text-center text-xl font-bold">
         Design System
       </div>
-      <div className="mt-[1rem] grid min-h-[900px] grid-cols-3 grid-rows-5 gap-4 border-[2px] border-black p-4">
+      <div className="mt-[1rem] grid min-h-[900px] lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 grid-rows-5 gap-4 border-[2px] border-black p-4">
         <div className="flex h-full w-full items-center justify-center border-[2px] border-black">
           <LayerdButton
             className=" bg-lighterBlue"
@@ -75,10 +75,10 @@ const DesignSystem = () => {
             <Avatar size={20} />
           </div>
         </div>
-        <div className="flex w-full items-center justify-center border-[2px] border-black">
+        <div className="flex w-full items-center justify-center border-[2px] border-black p-8">
           <FollowButton />
         </div>
-        <div className="flex w-full items-center justify-center border-[2px] border-black">
+        <div className="flex w-full items-center justify-center border-[2px] border-black p-8">
           <DropdownMenu
             listItems={[
               {
@@ -92,7 +92,7 @@ const DesignSystem = () => {
             ]}
           />
         </div>
-        <div className="flex w-full items-center justify-center border-[2px] border-black">
+        <div className="flex w-full items-center justify-center border-[2px] border-black p-8">
           <IconButton
             variant={'default'}
             size={'default'}
