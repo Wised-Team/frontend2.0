@@ -5,6 +5,7 @@ import Magnify from './Icons/MagnifyingGlass.svg';
 import Bell from './Icons/Bell.svg';
 import BellWithNotification from './Icons/BellWithNotification.svg';
 import arrow from './Icons/arrow.svg';
+
 import home from './Icons/HomeIcon.svg'
 import message from './Icons/messageIcon.svg'
 import libraryIcon from './Icons/libraryIcon.svg'

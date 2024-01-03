@@ -1,5 +1,6 @@
 import Avatar from '../../../components/ui/others/Avatar';
 import IconButton from '../../../components/ui/buttons/IconButton';
+
 import { editableIcon, home, libraryIcon, message, settingIcon, fadeNextIcon, nextIcon } from '../../../assets';
 import './RecentComponentText';
 import RecentComponentText from './RecentComponentText';
@@ -26,6 +27,7 @@ const SectionA = () => {
       setCurrentPage(newPage);
    };
 
+
    const handleNextClick = () => {
       if (currentPage < Math.ceil(data.length / itemsPerPage)) {
          setCurrentPage(currentPage + 1);
@@ -40,6 +42,7 @@ const SectionA = () => {
 
    return (
       <div className='w-[25%] h-[50%] border-[1px] border-[#E5E5E5] rounded-r-lg  relative px-5 py-5'>
+
 
          <div className='flex flex-row items-center gap-4 mt-3'>
             <Avatar size={40} />
@@ -98,6 +101,7 @@ const SectionA = () => {
          </div>
       </div>
    );
+
 };
 
 export default SectionA;

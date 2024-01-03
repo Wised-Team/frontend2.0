@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-
 const categories = [
   'All',
   'Internet of Things (IoT)',

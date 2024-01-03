@@ -60,11 +60,10 @@ const IconButton: React.FC<IconButtonProps> = ({
           {renderIcon()}
 
           <span className="mb-[1px]">{text}</span>
-
         </>
       ) : (
         <>
-          <span className='text-[16px] mt-1'>{text}</span>
+          <span className="mt-1 text-[16px]">{text}</span>
           {renderIcon()}
         </>
       )}
