@@ -10,7 +10,8 @@ import message from './Icons/messageIcon.svg'
 import libraryIcon from './Icons/libraryIcon.svg'
 import settingIcon from './Icons/settingIcon.svg'
 import editableIcon from './Icons/editableIcon.svg'
-
+import nextIcon from './Icons/NextArrow.svg'
+import fadeNextIcon from './Icons/FadeNextArrow.svg'
 
 
 //dummy
@@ -29,6 +30,8 @@ export {
   libraryIcon,
   settingIcon,
   editableIcon,
+  nextIcon,
+  fadeNextIcon,
 
   //dummy
   Ellipse,

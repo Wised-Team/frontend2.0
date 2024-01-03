@@ -19,7 +19,7 @@ const Trending = () => {
         {chips.map((item, index) => (
           <div
             key={index}
-            className="rounded-lg  border-[1px] border-[#E5E5E5] p-1 text-sm"
+            className="rounded-lg  border-[1px] border-[#E5E5E5] p-1 text-sm bg-[#f5f2f2] cursor-pointer"
           >
             {item}
           </div>

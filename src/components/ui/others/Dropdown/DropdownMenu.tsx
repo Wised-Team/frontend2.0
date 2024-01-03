@@ -58,7 +58,7 @@ const DropdownMenu: React.FC<DropdownMenuInterface> = ({
       onClick={handleDropdownOpener}
     >
       <span className={` font-sm font-normal`}>
-        {selectedItem === '' ? 'Select' : `${selectedItem}`}
+        {selectedItem === '' ? 'None' : `${selectedItem}`}
       </span>
       <img
         src={arrow}
