@@ -19,16 +19,24 @@ const Navbar = () => {
       </div>
       <div className="flex items-center gap-4">
         <div
-          className="cursor-pointer rounded-md px-1 py-1 hover:bg-[#40494f31]"
-          onClick={() => {
-            setisNotify(!isNotify);
-          }}
+          className="cursor-pointer flex flex-col items-center"
+          
         >
           {isNotify ? (
-            <ImageIcon url={Bell} wt="20px" ht="20px" />
+            <div className='rounded-md px-1 py-1 hover:bg-[#40494f31]'onClick={() => {
+              setisNotify(!isNotify);
+            }}>
+              <ImageIcon url={Bell} wt="20px" ht="20px" />
+            </div>
+            
           ) : (
-            <ImageIcon url={BellWithNotification} wt="20px" ht="20px" />
+            <div className='rounded-md px-1 py-1 hover:bg-[#40494f31]'onClick={() => {
+              setisNotify(!isNotify);
+            }}>
+              <ImageIcon url={BellWithNotification} wt="20px" ht="20px" />
+            </div>
           )}
+          <h5 className='text-[13px] font-Inter'>Notifications</h5>
         </div>
         <div className="cursor-pointer px-1 py-1 hover:rounded-3xl hover:bg-[#40494f31]">
           <ImageIcon
